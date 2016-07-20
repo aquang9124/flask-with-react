@@ -5,6 +5,7 @@ export default class NavbarBrand extends Component {
 		return (
 			<section className="brand-container">
 				<h1>Search-B</h1>
+				<p>Find Books</p>
 			</section>
 		);
 	}

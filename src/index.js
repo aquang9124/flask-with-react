@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import NavContainer from './components/nav-container';
+import Header from './components/header';
 
 class AppContainer extends Component {
 	constructor(props) {
@@ -13,8 +14,9 @@ class AppContainer extends Component {
 
 	render() {
 		return (
-			<div className="container-fluid">
+			<div className="wrapper">
 				<NavContainer />
+				<Header />
 			</div>
 		);
 	}
