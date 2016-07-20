@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import NavContainer from './components/nav-container';
-import Header from './components/header';
+import HeaderImage from './components/header-image';
 
 class AppContainer extends Component {
 	constructor(props) {
@@ -16,7 +16,7 @@ class AppContainer extends Component {
 		return (
 			<div className="wrapper">
 				<NavContainer />
-				<Header />
+				<HeaderImage />
 			</div>
 		);
 	}

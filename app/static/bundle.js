@@ -67,9 +67,9 @@
 
 	var _navContainer2 = _interopRequireDefault(_navContainer);
 
-	var _header = __webpack_require__(176);
+	var _headerImage = __webpack_require__(176);
 
-	var _header2 = _interopRequireDefault(_header);
+	var _headerImage2 = _interopRequireDefault(_headerImage);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -100,7 +100,7 @@
 					'div',
 					{ className: 'wrapper' },
 					_react2.default.createElement(_navContainer2.default, null),
-					_react2.default.createElement(_header2.default, null)
+					_react2.default.createElement(_headerImage2.default, null)
 				);
 			}
 		}]);
@@ -21187,7 +21187,7 @@
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
-					'nav',
+					'header',
 					{ className: 'navbar-wrapper' },
 					_react2.default.createElement(_navbarBrand2.default, null),
 					_react2.default.createElement(_navbar2.default, null)
@@ -21236,7 +21236,50 @@
 		_createClass(Navbar, [{
 			key: "render",
 			value: function render() {
-				return _react2.default.createElement("ul", { className: "navbar-white" });
+				return _react2.default.createElement(
+					"nav",
+					{ className: "navbar-white" },
+					_react2.default.createElement(
+						"ul",
+						{ className: "centered-nav" },
+						_react2.default.createElement(
+							"li",
+							{ className: "main-nav-item" },
+							_react2.default.createElement(
+								"a",
+								{ href: "javascript: void(0)" },
+								"Home"
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							{ className: "main-nav-item" },
+							_react2.default.createElement(
+								"a",
+								{ href: "javascript: void(0)" },
+								"About"
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							{ className: "main-nav-item" },
+							_react2.default.createElement(
+								"a",
+								{ href: "javascript: void(0)" },
+								"Search"
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							{ className: "main-nav-item" },
+							_react2.default.createElement(
+								"a",
+								{ href: "javascript: void(0)" },
+								"Contact"
+							)
+						)
+					)
+				);
 			}
 		}]);
 
