@@ -9,7 +9,8 @@ var webpackConfig = require('./webpack.config.js');
 var paths = {
 	scss: './app/static/sass/*.scss',
 	cssOutput: './app/static/css',
-	jsx: './src/components/*.jsx'
+	jsx: './src/components/*.jsx',
+	dashedJsx: './src/components/*-*.jsx'
 };
 
 // set up sass compilation task
@@ -21,14 +22,14 @@ gulp.task('sass', function() {
 
 // set up webpack task
 gulp.task('webpack', function() {
-	return gulp.src([webpackConfig.entry[0], paths.jsx])
+	return gulp.src([webpackConfig.entry[0], paths.jsx, paths.dashedJsx])
 		.pipe(webpack(webpackConfig))
 		.pipe(gulp.dest(webpackConfig.output.path));
 });
 
 gulp.task('watch', function() {
 	gulp.watch(paths.scss, ['sass']);
-	gulp.watch([webpackConfig.entry[0], paths.jsx], ['webpack']);
+	gulp.watch([webpackConfig.entry[0], paths.jsx, paths.dashedJsx], ['webpack']);
 });
 
 gulp.task('default', ['sass', 'webpack', 'watch']);
