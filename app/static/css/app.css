@@ -2,7 +2,8 @@
 html, body {
   width: 100%;
   height: 100%;
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  color: #673002; }
 
 main.content {
   height: 100%;
@@ -13,24 +14,40 @@ div.wrapper {
 
 header.navbar-wrapper {
   width: 100%;
-  height: 200px; }
+  height: 30vh; }
 
 .brand-container {
   text-align: center;
   position: relative;
   height: calc(100% - 50px); }
   .brand-container > h1 {
+    width: 20%;
     margin: 0 auto;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 0;
-    right: 0; }
+    right: 0;
+    letter-spacing: 0.05em;
+    cursor: default;
+    transition: all 0.4s ease-in-out; }
+    .brand-container > h1:hover {
+      color: #ca2017;
+      font-size: 2.8em; }
   .brand-container > p {
     margin: 0 auto;
     position: absolute;
-    top: 55%;
+    top: 65%;
+    letter-spacing: 0.1em;
+    font-size: 1.75em;
     left: 0;
-    right: 0; }
+    right: 0;
+    cursor: default; }
+
+.header-image {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/library.jpeg");
+  background-size: cover; }
 
 .navbar-white {
   border-top: 1px solid #333;
@@ -52,9 +69,9 @@ header.navbar-wrapper {
       height: 50px;
       padding: 0 10px; }
       .navbar-white .centered-nav .main-nav-item > a {
+        color: #673002;
         font-size: 1.3em;
         line-height: 50px;
-        color: black;
         text-decoration: none;
         transition: all 0.7s ease-in-out;
         position: relative; }

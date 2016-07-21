@@ -100,7 +100,8 @@
 					'div',
 					{ className: 'wrapper' },
 					_react2.default.createElement(_navContainer2.default, null),
-					_react2.default.createElement(_headerImage2.default, null)
+					_react2.default.createElement(_headerImage2.default, null),
+					_react2.default.createElement(AboutContainer, null)
 				);
 			}
 		}]);
@@ -21350,7 +21351,7 @@
 /* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -21380,9 +21381,9 @@
 		}
 
 		_createClass(Header, [{
-			key: 'render',
+			key: "render",
 			value: function render() {
-				return _react2.default.createElement('header', null);
+				return _react2.default.createElement("header", { className: "header-image" });
 			}
 		}]);
 

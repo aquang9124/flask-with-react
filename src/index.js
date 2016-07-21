@@ -17,6 +17,7 @@ class AppContainer extends Component {
 			<div className="wrapper">
 				<NavContainer />
 				<HeaderImage />
+				<AboutContainer />
 			</div>
 		);
 	}
